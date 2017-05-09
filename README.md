@@ -1,4 +1,4 @@
-# SE_Tech Titans
+# COS 301 Tech Titans
 
 ## Welcome to the COS 301 - Main Project
 
