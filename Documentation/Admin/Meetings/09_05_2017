@@ -1,0 +1,40 @@
+Date: 09/05/2017
+Agenda
+1.	We already know one another 😊
+2.	Roles and responsibility
+a.	Commitment
+b.	Taking responsibility and acting as a stakeholder 
+i.	Landing page- dark night
+ii.	Tender document-  Friday 12/05/2017 && Saturday 13/05/2017
+c.	Remember the end goal always
+d.	Communication takes priority ALWAYS
+e.	Slack
+i.	GitHub- hlakanya 
+ii.	Always keep commination professional on slack-use English as medium of communication
+3.	GitHub
+a.	Structure
+i.	Never work directly in master branch
+ii.	Always WIP
+iii.	Work locally
+b.	WIP- Work in Progress(Always work in this directory)
+c.	Steps of creating a pull request
+
+i.	In order of execution when contributing to the document:
+ii.	1. On github, navigate to the WIP branch
+iii.	2. Create a New branch which will make an EXACT copy of the files in WIP
+iv.	3. Use git to clone the repo to your desktop
+v.	4. On the local copy of the repo, use git terminal to navigate to the new branch you JUST created.  
+vi.	5. Then you can EDIT the necessary files.  
+vii.	6. Compile and make SURE it works with the rest of the code.  
+viii.	7. ONLY when it compiles may you push your local copy back to your own branch.  
+ix.	8. Then make a pull request from your own branch you just tested back to WIP as the base branch
+
+4.	Kenneth 😊
+
+
+
+
+
+
+
+
