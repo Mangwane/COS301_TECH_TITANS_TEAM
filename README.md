@@ -1,8 +1,11 @@
-# COS 301 Tech Titans
 
-## Welcome to the COS 301 - Main Project
+# Welcome to the COS 301 - Main Project
+
 
 ## Project name: #
+Project Description : #
+
+## Team Name:Tech Titans
 
 ## Members of the Broad Sword GIS team:
 
