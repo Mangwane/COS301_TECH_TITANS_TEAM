@@ -14,5 +14,5 @@ Name | Surname | Student No.
 Mankgwanyane | Tlaka | 14351872
 Oratile | Motswagosele | 15306195
 Lesego | Makaleng | 15175716
-Kenneth | Mangwane | #
+Kenneth | Mangwane | 15183379
 Tlou | Lebelo | 15209190
