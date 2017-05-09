@@ -7,7 +7,7 @@ Project Description : #
 
 ## Team Name:Tech Titans
 
-## Members of the Broad Sword GIS team:
+## Members of the team:
 
 Name | Surname | Student No.
 ---- | ------- | -----------
