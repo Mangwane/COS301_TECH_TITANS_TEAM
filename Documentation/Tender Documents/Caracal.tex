@@ -1,9 +1,20 @@
-
+\documentclass{article}
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[export]{adjustbox}
+\usepackage{paralist}
+\usepackage{wrapfig}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 %----------------------------------------------------------------------------------------
-
-\documentclass{article}
 
 \newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
 
@@ -47,26 +58,142 @@ Edited by \\[\baselineskip]
 \titleGP % This command includes the title page
 \pagebreak
 
+\section{Team Members}
+%Team Section ------------------------------------------------------------------------
+\centering
+% Lesego Makaleng Profile ------------------------------------------------------------------
+{\huge Lesego David Makaleng}
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm, height=5cm]{Lesego.eps} 
+\end{figure}
+
+ 	\textit{I want to do this project because it is very innovative, creative, challenging and my type of work}
+
+\begin{center}
+\begin{tabularx}{1.0\textwidth}{|p{3cm}|X|}
+\hline
+ {\LARGE Interests} & 
+ \begin{compactitem}
+     \item {\large Computer Security and Networks}
+     \item {\large Designing}
+     \item {\large Software Development}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Technical Skills} & 
+ \begin{compactitem}
+     \item {\large Web Technologies} 
+     \item {\large Java, C++, C Programming}
+     \item {\large Linux Coding}
+     \item {\large Object-Orientated Programming}
+     \item {\large Software Development}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Past Experience} & 
+ \begin{compactitem}
+     \item {\large Web Designing for 2 Different Clients (www.lecsplash.co.za) and (www.davenue.co.za)}
+	 \item {\large I worked on NavUP project under the Data module, which required us to push and pull data between users, the different modules and the server in an optimal way.}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Non-Technical Skills} & 
+ \begin{compactitem}
+     \item {\large Public Speaking}
+     \item {\large Leadership}
+ \end{compactitem} \\
+ \hline 
+\end{tabularx}
+\end{center}
+\pagebreak
+% Oratile Motswagosele Profile ------------------------------------------------------------------
+{\huge Oratile Motswagosele}
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm, height=5cm]{Oratile.eps} 
+\end{figure}
+
+ 	\textit{I want to do this project because it is very innovative, creative, challenging and my type of work}
+
+\begin{center}
+\begin{tabularx}{1.0\textwidth}{|p{3cm}|X|}
+\hline
+ {\LARGE Interests} & 
+ \begin{compactitem}
+     \item {\large System Design}
+     \item {\large Databases}
+     \item {\large Software Development}
+	 \item {\large System Performance}
+	 \item {\large Graphics (2D and 3D)}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Technical Skills} & 
+ \begin{compactitem}
+     \item {\large Programming / Scirpting / Coding} 
+     \item {\large Refactoring}
+     \item {\large Flexible with mutliple languages}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Past Experience} & 
+ \begin{compactitem}
+     \item {\large Developed a CCTV system that can monitor every action at the truck weigh scale and the system is also able take screenshots at any time and store them in a database.}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Non-Technical Skills} & 
+ \begin{compactitem}
+     \item {\large Communication}
+     \item {\large Collaboration}
+	 \item {\large Time Management}
+	 \item {\large Creativity}
+ \end{compactitem} \\
+ \hline 
+\end{tabularx}
+\end{center}
+\pagebreak
+% Mankgwanyane Tlaka Profile ------------------------------------------------------------------
+{\huge Mankgwanyane Tlaka}
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm, height=5cm]{Mankgwanyane.eps} 
+\end{figure}
+
+ 	\textit{I want to do this project because it is very innovative, creative, challenging and my type of work}
+
+\begin{center}
+\begin{tabularx}{1.0\textwidth}{|p{3cm}|X|}
+\hline
+ {\LARGE Interests} & 
+ \begin{compactitem}
+     \item {\large Data}
+     \item {\large Optimazation}
+     \item {\large Software Analysis and Modelling}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Technical Skills} & 
+ \begin{compactitem}
+     \item {\large Programming} 
+     \item {\large Refactoring}
+     \item {\large Flexible with mutliple languages}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Past Experience} & 
+ \begin{compactitem}
+     \item {\large I worked on the Comiar Project, which required for us to design and implement a course management system.}
+     \item {\large I worked on an SRC electoral Project, which allowed students of the University of Pretoria to interact with the SRC candidates.}
+	 \item {\large I worked on the NavUP system under the GIS module, which  required us to gather, maintain and persist information to navigate students around campus.}
+ \end{compactitem} \\ 
+ \hline
+ {\LARGE Non-Technical Skills} & 
+ \begin{compactitem}
+     \item {\large Communication}
+     \item {\large Leadership}
+ \end{compactitem} \\
+ \hline 
+\end{tabularx}
+\end{center}
+\pagebreak
+%Team Section ------------------------------------------------------------------------
 \section{Technologies: Deployment Diagram}
 
 \section{Development Methodology}
-
-\paragraph{The development methodology to be followed is the Agile Development Methodology. This is to allow for any changes that may be required in the development process of the system and also to minimize the risks by developing the software system in cycles called iterations.}
-
-\paragraph{Regular team meetings will also be important in the software development process. Hence for every week, there will be three team meetings, scheduled as follows:}
-
-\begin{itemize}
-\item First meeting: Mondays
-\item Second meeting: Wednesdays
-\item Third meeting: Fridays
-\end{itemize}
-
-\paragraph{On Fridays, it is also important to meet with the client to discuss and give feedback about the software development process. The clients’ role will be important during the entire software development process and the role is as follows:}
-
-\begin{itemize}
-\item Frequent guidance from the client based on our process (development process).
-\item The client should also be actively involved, this will minimize any risks of going out of the project scope.
-\end{itemize}
 
 \section{Skills and Knowledge}
 
