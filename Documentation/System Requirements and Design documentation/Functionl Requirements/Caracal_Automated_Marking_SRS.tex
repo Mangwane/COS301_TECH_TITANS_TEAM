@@ -162,6 +162,23 @@ Taking a deeper look at the grade 12 question paper marking process, it is reali
 		%place text here
 	\subsection{Required functionality}
 	%place text here
+	\justify
+The Caracal Automated Marking system will mostly rely on the the Optical Character Recognition (OCR), which has three most essential elements that are vital for the Caracal Automated Marking system. The elements are scanning, reading text and recognition. Therefore, as shown in Figure 1 below, the sequential or rather logical flow of the system will be input, scanning conversion, marking and output.
+
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{flow.png}
+	\caption{Caracal Automated Marking logical flow}
+\end{figure}
+
+\justify
+The system accept documents as input, with the integrated OCR technology the input documents have to be scanned and stored temporarily as images for marking. The images are then converted into words and characters that are recognizable. Next, the system marks the document, stores the marks and produce the output. The output is preferably the marked document as a portable document file. Therefore the overall functionality of the Caracal Automated Marking will be:
+	\begin{itemize}
+		\item Input - Three documents (i.e Question paper, Memo and the Answer sheet)
+		\item Validation and Scanning
+		\item Conversion
+		\item Marking
+		\item Output - Marked document as portable document file
+	\end{itemize}
 	\subsection{Process specification}
 	%place text here
 	\subsection{Domain Model}
