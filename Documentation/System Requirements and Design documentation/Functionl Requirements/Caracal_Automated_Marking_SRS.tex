@@ -95,9 +95,24 @@ Taking a deeper look at the grade 12 question paper marking process, it is reali
 	\subsection{Quality requirements}	
 	%place text here
 	\subsection{Integration requirements}
-	%place text here
-	\subsection{Architecture constraintss}	
-	%place text here
+	%External Technologies and Software that we will be using to implement solution
+	\begin{enumerate}
+		\item Data Management
+		\begin{itemize}
+			\item Apache Flink - This is a data streaming platform that will be used to manage the streaming of data such as memo and test documents, user registrations and marking requests.
+		\end{itemize}
+		\item Optical Character Recognition (OCR)
+		\begin{itemize}
+			\item Mathpix - This is an API used to read handwritten mathematical equations, graphs, matrices etc. It will be used to read math equations from the memos and test papers of the users.
+			\item AbbyyOCR4 CLI Linux - This is another API which also reads handwritten characters from scanned documents and images. This API will be used to read all characters, especially for math questions such as sequence and series and also financial math questions for compound interest, simple interest etc.
+		\end{itemize}
+	\end{enumerate}
+	\subsection{Architecture constraints}	
+	%Any constraints the client may have specified in terms of the solution space of this project
+	\begin{itemize}
+		\item A web based solution. This means we need to use web-technologies such as php, html in our solution, esspecially for the user interface.
+		\item Moodle programming. The solution should be rendered as a moodle plugin (ideally).
+	\end{itemize}
 \section{Functional requirements and application design}
 
 	\subsection{Use case prioritization}
