@@ -26,10 +26,10 @@ This project will be managed and results owned by Caracal
 
 ## Members of the team:
 
-Name | Surname | Student No. | Role
----- | ------- | ----------- | ----------
-Mankgwanyane | Tlaka | 14351872 | Leader and Contact Person
+Name | Surname | Student No. |
+---- | ------- | ----------- | 
+Mankgwanyane | Tlaka | 14351872 |
 Oratile | Motswagosele | 15306195 | 
 Lesego | Makaleng | 15175716 | 
 Kenneth | Mangwane | 15183379 | 
-Tlou | Lebelo | 15209190 | Developer, Artificial Intelligence
+Tlou | Lebelo | 15209190 | 
