@@ -162,11 +162,139 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 			
 			\end{itemize}
 	\subsection{Use case/Services contracts}
-%For each use case/service specify
-		\subsubsection{Pre-Conditions:}
-		%place text here
-		\subsubsection{Post-Conditions:}
-		%place text here
+\subsection{Critical:}
+
+\begin{itemize}
+	
+		\item Input memo
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The must be a memo and a scannig system that can accept the memo in physcical form. If the memo is already in the required format which is pdf, the system will accept the input in the pdf format.
+				\item Post-condition
+					\paragraph The output will be a bmp image and a pdf document.
+			\end{itemize}
+		\item Input  question paper
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The must be a question paper and a scannig system that can accept the question paper in physcical form. If the question paper is already in the required format which is pdf, the system will accept the input in the pdf format.
+				\item Post-condition
+					\paragraph The output will be a bmp image and a pdf document.
+			\end{itemize}
+		\item Input  student answer script
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The must be an answer script and a scannig system that can accept the answer script in physcical form. 
+				\item Post-condition
+					\paragraph The output will be a bmp image and a pdf document.
+			\end{itemize}
+
+
+		\item Mark script
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The answer script must be available in the system as a bmp image and/or a pdf document(and the input files must have passed analysis).
+				\item Post-condition
+					\paragraph The marks obtained by the student
+			\end{itemize}
+			
+		\item Persist Obtained mark
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The system should be done marking with no errors.
+				\item Post-condition
+					\paragraph The marks are matched with the student in put in the database.
+			\end{itemize}
+
+		\item Output marks
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The marks must be available in the database
+				\item Post-condition
+					\paragraph The system shows the marks of the required student.
+			\end{itemize}
+		\item Output marked sheet
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The system should be done marking with no errors.
+				\item Post-condition
+					\paragraph The system prints out the marked answer sheet
+			\end{itemize}
+
+			
+
+
+\end{itemize} 
+
+\subsubsection{Important:}
+	\begin{itemize}
+		\item Validate Question Paper
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The must be a question paper saved in the system as a bmp image or pdf document.
+				\item Post-condition
+					\paragraph An error if the question paper is not readable or corrupted.
+			\end{itemize}
+		\item validate Memo
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The must be a memo saved in the system as a bmp image or pdf document.
+				\item Post-condition
+					\paragraph An error if the memo is not readable or corrupted.
+			\end{itemize}
+		\item validate Student Answer Script
+			\begin{itemize}
+				\item Pre-condition
+					\paragraph The must be a answer sheet saved in the system as a bmp image or pdf document.
+				\item Post-condition
+					\paragraph An error if the answer sheet is not readable or corrupted.
+			\end{itemize}
+		\item Slice Question Paper
+			\begin{itemize}
+				\item Pre-condition  
+					\paragraph The must be a question paper saved in the system as a bmp image or pdf document.
+				\item Post-condition
+					\paragraph The question paper will be split into small subsections and stored in a temporary database in the system
+			\end{itemize}
+		\item Slice Memo
+			\begin{itemize}
+				\item Pre-condition  
+					\paragraph The must be a memo  saved in the system as a bmp image or pdf document.
+				\item Post-condition
+					\paragraph The question paper will be split into small subsections and stored in a temporary database in the system
+			\end{itemize}
+		\item Slice Student Answer Script
+			\begin{itemize}
+				\item Pre-condition  
+					\paragraph The must be an answer sheet saved in the system as a bmp image or pdf document.
+				\item Post-condition
+					\paragraph The answer sheet will be split into small subsections and stored in a temporary database in the system
+			\end{itemize}
+		\item Convert Sliced  Question Paper Sections To Suitable Format
+			\begin{itemize}
+				\item Pre-condition 
+					\paragraph The must be a question paper in  the system that has been sliced into small subsections
+				\item Post-condition
+					\paragraph The question paper subsections will be converted to a format suitable to the format accepted by the marking system
+			\end{itemize}
+		\item Convert Sliced  Memo Sections To Suitable Format
+			\begin{itemize}
+				\item Pre-condition 
+					\paragraph The must be a memo in  the system that has been sliced into small subsections
+				\item Post-condition
+					\paragraph The memo subsections will be converted to a format suitable to the format accepted by the marking system
+			\end{itemize}
+		\item Convert Sliced  Student Answer Script Sections  To Suitable Format
+			\begin{itemize}
+				\item Pre-condition 
+					\paragraph The must be a answer sheet in  the system that has been sliced into small subsections
+				\item Post-condition
+					\paragraph The answer sheet subsections will be converted to a format suitable to the format accepted by the marking system
+			
+			\end{itemize}
+
+
+	\end{itemize}
+
 		\subsubsection{Request and Results Data Structures:}
 		%place text here
 	\subsection{Required functionality}
@@ -194,6 +322,8 @@ The system accept documents as input, with the integrated OCR technology the inp
 	%place text here
 	
 \section{Open Issues}
+	\paragraph The most critical issue is if the client is willing to pay for the technologies that we are going to use or should we develop everything from scratch. Another issue is the format of the question paper and memo, how is the question paper and memo going to be structured and is the structure going to be conbsistent or should our system adapt to any structure that it is presented. Will the system mark the final answer or should it also mark the steps followed to get the answer.
+	\paragraph Should the system write the marks on the answer sheet or should it print a copy with the marks of the student. Will the scripts be entered one at the time then marked or will the system accept a load of scripts and then mark every sheet. 
 
 \end{document}
 	
