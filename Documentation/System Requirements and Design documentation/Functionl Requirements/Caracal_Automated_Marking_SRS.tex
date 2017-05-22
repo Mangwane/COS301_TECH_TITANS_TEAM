@@ -92,6 +92,15 @@ Taking a deeper look at the grade 12 question paper marking process, it is reali
 
 	\subsection{Access channel requirements}
 	%place text here
+	\justify
+The Caracal Automated Marking system will be web-based, and available as a Moodle plugin. Therefore it should be accessible on most platforms such as Android, Unix and iOS. Also, the browser support may be dependent on the implemented system plug-ins, however, currently Moodle 2.8 browser support is as follows:
+	\begin{itemize}
+		\item Google Chrome (Min. Version: 30.0 and Rec. Version: Latest)
+		\item Mozilla Firefox (Min. Version: 25.0 and Rec. Version: Latest)
+		\item Apple Safari (Min. Version 6 and Rec. Version: Latest)
+		\item Microsoft Internet Explorer (Min. Version 9 and Rec. Version: Latest)
+	\end{itemize}
+Also, Moodle provides accessibility plug-ins. With the requirements listed above, the system should therefore be accessible.
 	\subsection{Quality requirements}	
 	%place text here
 	\subsection{Integration requirements}
@@ -162,6 +171,23 @@ Taking a deeper look at the grade 12 question paper marking process, it is reali
 		%place text here
 	\subsection{Required functionality}
 	%place text here
+	\justify
+The Caracal Automated Marking system will mostly rely on the the Optical Character Recognition (OCR), which has three most essential elements that are vital for the Caracal Automated Marking system. The elements are scanning, reading text and recognition. Therefore, as shown in Figure 1 below, the sequential or rather logical flow of the system will be input, scanning conversion, marking and output.
+
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{flow.png}
+	\caption{Caracal Automated Marking logical flow}
+\end{figure}
+
+\justify
+The system accept documents as input, with the integrated OCR technology the input documents have to be scanned and stored temporarily as images for marking. The images are then converted into words and characters that are recognizable. Next, the system marks the document, stores the marks and produce the output. The output is preferably the marked document as a portable document file. Therefore the overall functionality of the Caracal Automated Marking will be:
+	\begin{itemize}
+		\item Input - Three documents (i.e Question paper, Memo and the Answer sheet)
+		\item Validation and Scanning
+		\item Conversion
+		\item Marking
+		\item Output - Marked document as portable document file
+	\end{itemize}
 	\subsection{Process specification}
 	%place text here
 	\subsection{Domain Model}
