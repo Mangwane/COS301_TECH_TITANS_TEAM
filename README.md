@@ -4,7 +4,19 @@
 
 ## Project name: Caracal automated Marking
 
-Project Description : 
+## NB: ALL WORK IN PROGRESS WILL BE IN WIP BRANCH, MASTER BRANCH WILL ONLY BE UP TO DATE DURING DEMO DATES
+
+### DEMO DATES
+
+1. 26 May Demo 1
+2. 28 Jul Demo 2
+3. 1 Sep Demo 3
+4. 13 Oct Final evaluation phase starts
+5. 19 Oct Virtual project demos are made public
+6. 31 Oct Final evaluation phase ends
+
+
+#### Project Description : 
 1. Create an automatic mathematics assessment solution that can be used on educational websites. It
 should be able to:
 
