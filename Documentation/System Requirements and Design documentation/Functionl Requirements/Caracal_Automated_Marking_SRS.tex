@@ -376,7 +376,7 @@ The system accept documents as input, with the integrated OCR technology the inp
 	\item UC2.3: Assign Role
 	\item UC2.4: View User
 	\item UC2.5: Edit User
-	\item UC3.1:Notify Marking Status
+	\item UC3.1: Notify Marking Status
 	\item UC3.2: Notify Admin
 	\item UC3.3: Signal System Error
 	\item UC4.1: Stream Input Data
@@ -407,21 +407,23 @@ The system accept documents as input, with the integrated OCR technology the inp
 	\item R03: Allow New Users to Register
 	\item R04: Allow for Document Input
 	\item R05: Answer Sheet Marking
-	\item R06: Output: Marked Answer Sheet
+	\item R06: Notifications
+	\item R07: Output: Marked Answer Sheet
 	\end{itemize}
 \begin{table}[h!]
 \centering
 \label{my-label}
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 \hline
-Requirement & Priority & \begin{tabular}[c]{@{}l@{}}UC\\ 1.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 2.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 2.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 3.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 5.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 5.8\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.3\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.4\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.5\end{tabular} \\ \hline
-R01 & 1 & X & X &   &   &   &   &   &   &   &   &    \\ \hline
-R02 & 2 &   & X & X &   &   &   &   &   &   &   &    \\ \hline
-R03 & 2 &   & X & X &   &   &   &   &   &   &   &    \\ \hline
-R04 & 1 &   &   &   &   &   &   & X & X & X &   &    \\ \hline
-R05 & 1 &   &   &   & X & X & X &   &   &   & X &    \\ \hline
-R06 & 2 &   &   &   &   &   & X &   &   &   & X &  X  \\ \hline
-\multicolumn{2}{|c|}{UC Priority} & 1 & 2 & 2 & 1 & 2 & 3 & 2 & 1 & 1 & 1 & 2   \\ \hline
+Requirement & Priority & \begin{tabular}[c]{@{}l@{}}UC\\ 1.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 1.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 2.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 3.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 5.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 5.8\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.3\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.4\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.5\end{tabular} \\ \hline
+R01 & 1 & X & X &   &    &    &    &    &    &    &    &    \\ \hline
+R02 & 2 & X &   & X &    &    &    & X  & X  & X  &    &    \\ \hline
+R03 & 2 & X & X & X &    &    &    &    &    &    &    &    \\ \hline
+R04 & 1 &   &   &   &    & X  &    & X  & X  & X  &    &    \\ \hline
+R05 & 1 &   &   &   &    & X  & X  &    &    &    & X  & X  \\ \hline
+R06 & 3 &   &   &   & X  &    &    &    &    &    &    &    \\ \hline
+R07 & 2 &   &   &   &    &    & X  &    &    &    & X  & X   \\ \hline
+\multicolumn{2}{|c|}{UC Priority} & 1 & 2 & 2 & 1 & 2 & 1 & 1 & 1 & 1 & 1 & 2   \\ \hline
 \end{tabular}
 \caption{Traceability Matrix}
 \end{table}
