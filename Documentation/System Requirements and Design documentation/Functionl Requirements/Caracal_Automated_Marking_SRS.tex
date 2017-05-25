@@ -410,7 +410,23 @@ The system accept documents as input, with the integrated OCR technology the inp
 	\item R05: Answer Sheet Marking
 	\item R06: Output: Marked Answer Sheet
 	\end{itemize}
-	
+\begin{table}[h!]
+\centering
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+Requirement & Priority & \begin{tabular}[c]{@{}l@{}}UC\\ 1.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 2.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 2.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 3.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 5.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 5.8\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.1\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.3\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.4\end{tabular} & \begin{tabular}[c]{@{}l@{}}UC\\ 7.5\end{tabular} \\ \hline
+R01 & 1 & X & X &   &   &   &   &   &   &   &   &    \\ \hline
+R02 & 2 &   & X & X &   &   &   &   &   &   &   &    \\ \hline
+R03 & 2 &   & X & X &   &   &   &   &   &   &   &    \\ \hline
+R04 & 1 &   &   &   &   &   &   & X & X & X &   &    \\ \hline
+R05 & 1 &   &   &   & X & X & X &   &   &   & X &    \\ \hline
+R06 & 2 &   &   &   &   &   & X &   &   &   & X &  X  \\ \hline
+\multicolumn{2}{|c|}{UC Priority} & 1 & 2 & 2 & 1 & 2 & 3 & 2 & 1 & 1 & 1 & 2   \\ \hline
+\end{tabular}
+\caption{Traceability Matrix}
+\end{table}
+
 \section{Open Issues}
 	 The most critical issue is if the client is willing to pay for the technologies that we are going to use or should we develop everything from scratch. Another issue is the format of the question paper and memo, how is the question paper and memo going to be structured and is the structure going to be conbsistent or should our system adapt to any structure that it is presented. Will the system mark the final answer or should it also mark the steps followed to get the answer. \par
 	 Should the system write the marks on the answer sheet or should it print a copy with the marks of the student. Will the scripts be entered one at the time then marked or will the system accept a load of scripts and then mark every sheet. 
