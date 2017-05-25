@@ -129,7 +129,13 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 			\item \textbf{Access Module} \\
 							\textit{Scope:}\\
 							 The scope of this module will be to give users a graphical user interface, which will allow them to login and register and to also be able to have access to the system as the whole. This module will be in charge of deploying a GUI on multiple browsers i.e. FireFox, Google Chrome, Microsoft Edge. It will provide a friendly user functionality of the whole system.  
-						
+\begin{itemize}
+						\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px]{access.png}
+								\caption{I/O module use case diagram}
+								\end{figure}
+\end{itemize}
 			\item \textbf{User Management Module}\\
 						\textit{Scope:}\\
 						This module will be in charge of managing user information and the different types of users. The different types of users of this system will be as follows: \\
@@ -137,13 +143,34 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 							\item Admin - The role of this user will be to have access to uploading question papers and memorandums, and general access to sensitive information of the system. This user can also delete/approve other users below this level i.e. Teachers from the system. 
 							\item Teacher - The role of this user will be to upload the test papers of students i.e. their class of students, and recieve marks of the papers they have uploaded. This user cannot have direct access to the memo or question paper. This user also needs approval from the admin before being registered. This is to prevent students registering as fake teachers and uploading tests to get access to the marking system 
 						\end{itemize}
+\begin{itemize}
+								\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px]{user_management.png}
+								\caption{user management module use case diagram}
+								\end{figure}
+						\end{itemize}
 			\item \textbf{Notifications Module}\\
 						\textit{Scope:}\\
 						This module will be responsible for giving feedback to the users of the system. A general example would be when a teacher uploads 100 papers to be marked. If the system can't handle the request immediately, the notifications module will have to notify that teacher when their papers are ready to be retrieved after marking is completed. The module will deploy notifications via notices on the system and also emails for more complex notifications like paper collection.
-					
-			\item \textbf{Data Streaming and Security Module}\\
+					\begin{itemize}
+								\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px]{notification.png}
+								\caption{Notifications module use case diagram}
+								\end{figure}
+						\end{itemize}
+
+			\item \textbf {Data Streaming and Security Module}\\
 					\textit{Scope:}\\
-					This module will be responsible for handling and management of data in all its forms. The module will firstly make sure that requests relating to data uploads and downloads are handled as quick as possible through an external data management tool API. The module will also make sure that before data is transported from server to client and vica versa, it will be decrypted and encrypted respectively. This module will basically be responsible for data integrity and data protection of the system.  
+					This module will be responsible for handling and management of data in all its forms. The module will firstly make sure that requests relating to data uploads and downloads are handled as quick as possible through an external data management tool API. The module will also make sure that before data is transported from server to client and vica versa, it will be decrypted and encrypted respectively. This module will basically be responsible for data integrity and data protection of the system.  \\
+			\begin{itemize}
+								\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px, inner]{data_and_security.png}
+								\caption{data and security module use case diagram}
+								\end{figure}
+					\end{itemize}
 			
 			\item \textbf{Marking Module}\\
 				\textit{Scope:}\\
@@ -153,15 +180,35 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 					\item Comparing - This means after breaking the paper in smaller pieces, AI analytical algorithms will be used to properly compare and mark the answers against the memo.
 					\item Persisting - This means after marking is complete, the marks and relevant answer sheet will be stored in the database.
 				\end{itemize}
+\begin{itemize}
+								\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px]{marking.png}
+								\caption{marking module use case diagram}
+								\end{figure}
+					\end{itemize}
 			\item \textbf{Reporting Module}\\
 			
 				\textit{Scope:}\\
 				The Scope of this module will be to create performance and statistical reports of the student marks and basically give feedback of how the marks went, what problems most students faced, suggestions etc. This module will compile a report using data from the database and analytical data algorithms. 
-			
+			\begin{itemize}
+								\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px]{reporting.png}
+								\caption{reporting module use case diagram}
+								\end{figure}
+					\end{itemize}
 			\item \textbf{I/O Module}\\
 		
 				\textit{Scope:}\\
 				This module will be in charge of the inputting and outputting of documents. One of the core functionalities for this module, will be to edit the answer sheet and append the marks calculated by the marking module to the answer sheet, and then outputting that document back to the user for download. Managing where documents are inputted to, formats and structure will also be amongst the scope of this module.
+			\begin{itemize}
+								\item use case diagrams\\
+								\begin{figure}[h]
+								\includegraphics[width=200px, height=200px]{io_module.png}
+								\caption{I/O module use case diagram}
+								\end{figure}
+					\end{itemize}
 			
 		\end{enumerate}
 	\subsection{Use case prioritization}
@@ -342,7 +389,7 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 	
 The Caracal Automated Marking system will mostly rely on the the Optical Character Recognition (OCR), which has three most essential elements that are vital for the Caracal Automated Marking system. The elements are scanning, reading text and recognition. Therefore, as shown in Figure 1 below, the sequential or rather logical flow of the system will be input, scanning conversion, marking and output.
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\includegraphics[width=\linewidth]{flow.PNG}
 	\caption{Caracal Automated Marking logical flow}
 \end{figure}
