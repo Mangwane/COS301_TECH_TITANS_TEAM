@@ -4,6 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[thinlines]{easytable}
 \usepackage[export]{adjustbox}
 \usepackage{paralist}
 \usepackage{wrapfig}
@@ -78,22 +80,22 @@ LMS systems such as Moodle gives the option to design and enter electronic cours
 
 Caracal Automated Marking is aimed at  developing a metalanguage for the electronic assessment of grade 12 mathematical question in which the steps employed to arrive at the answer can be assessed, not only the final answer. The system should be ideally available as a Moodle plugin. \\
 
-The proposed solution, ideally would be integrated into the Moodle open learning platform as a plugin. The system should accept three documents- i.e., a document with mathematics question; a document with the memorandum and a document with student answers. The system should analyze answer document and give a mark. \\
+The proposed solution, ideally would be integrated into the Moodle open learning platform as a plugin. The system should accept three documents i.e. a document with mathematics question; a document with the memorandum and a document with student answers. The system should analyse answer document and give a mark. \\
 
-At the end the proposed  system should ideallly act as methodology through which any given problem and matching memorandum can be entered. 
+At the end, the proposed  system should ideally act as a methodology through which any given problem and matching memorandum can be entered. 
 
 \section{Background}
 
-E-learning is a topic that receives a lot of attention worldwide and even more in Africa. The problem of educating dispersed people with few resources is a headache that troubles many government and new initiatives are being launched daily to try and solve the problem. \\
+E-learning is a topic that receives a lot of attention worldwide and even more in Africa. The problem of educating dispersed people with a few resources is a headache that troubles many governments. New initiatives are being launched daily to try and solve the problem. \\
 
-Taking a deeper look at the grade 12 question paper marking process, it is realised that most of the time, individuals are still needed who have the knowledge and skill to go through all the answered mathematics scripys and grade them correctly. This process has proven to be time costly and human error tends to creep up at a minimal level.
+Taking a deeper look at the grade 12 question paper marking process, it is realised that most of the time, individuals are still needed who have the knowledge and skill to go through all the answered mathematics scripts and grade them correctly. This process has proven to be time costly and human error tends to creep up at a minimal rate.
 
 \section{Architecture requirements}
 
 	\subsection{Access channel requirements}
 	%place text here
 	
-The Caracal Automated Marking system will be web-based, and available as a Moodle plugin. Therefore it should be accessible on most platforms such as Android, Unix and iOS. Also, the browser support may be dependent on the implemented system plug-ins, however, currently Moodle 2.8 browser support is as follows:
+The Caracal Automated Marking system will be web-based, and  ideally available as a Moodle plug-in. Therefore it should be accessible on most platforms such as Android, Unix and iOS. Also, the browser support may be dependent on the implemented system plug-ins, however, currently Moodle 2.8 browser support is as follows:
 	\begin{itemize}
 		\item Google Chrome (Min. Version: 30.0 and Rec. Version: Latest)
 		\item Mozilla Firefox (Min. Version: 25.0 and Rec. Version: Latest)
@@ -112,14 +114,14 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 		\end{itemize}
 		\item Optical Character Recognition (OCR)
 		\begin{itemize}
-			\item Mathpix - This is an API used to read handwritten mathematical equations, graphs, matrices etc. It will be used to read math equations from the memos and test papers of the users.
+			\item Mathpix - This is an API used to read handwritten mathematical equations, graphs, matrices etc. It will be used to read math equations from the memos and test papers of the users. \\
 			\item AbbyyOCR4 CLI Linux - This is another API which also reads handwritten characters from scanned documents and images. This API will be used to read all characters, especially for math questions such as sequence and series and also financial math questions for compound interest, simple interest etc.
 		\end{itemize}
 	\end{enumerate}
 	\subsection{Architecture constraints}	
 	%Any constraints the client may have specified in terms of the solution space of this project
 	\begin{itemize}
-		\item A web based solution. This means we need to use web-technologies such as php, html in our solution, esspecially for the user interface.
+		\item A web based solution. This means we need to use web-technologies such as php, html in our solution, especially for the user interface.
 		\item Moodle programming. The solution should be rendered as a moodle plugin (ideally).
 	\end{itemize}
 \section{Functional requirements and application design}
@@ -128,13 +130,13 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 		\begin{enumerate}
 			\item \textbf{Access Module} \\
 							\textit{Scope:}\\
-							 The scope of this module will be to give users a graphical user interface, which will allow them to login and register and to also be able to have access to the system as the whole. This module will be in charge of deploying a GUI on multiple browsers i.e. FireFox, Google Chrome, Microsoft Edge. It will provide a friendly user functionality of the whole system.  
+							 The scope of this module will be to give users a graphical user interface, which will allow them to login and register and to also be able to have access to the system as whole. This module will be in charge of deploying a GUI on multiple browsers i.e. FireFox, Google Chrome, Microsoft Edge. It will provide a friendly user functionality of the whole system.  
 \begin{itemize}
 						\item use case diagrams\\
 								\begin{figure}[h]
 
 								\centerline{\includegraphics[width=200px, height=200px]{access.png}}
-								\caption{I/O module use case diagram}
+								\caption{I/O module use case diagram }
 								\end{figure}
 \end{itemize}
 			\item \textbf{User Management Module}\\
@@ -142,14 +144,14 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 						This module will be in charge of managing user information and the different types of users. The different types of users of this system will be as follows: \\
 						\begin{itemize}
 							\item Admin - The role of this user will be to have access to uploading question papers and memorandums, and general access to sensitive information of the system. This user can also delete/approve other users below this level i.e. Teachers from the system. 
-							\item Teacher - The role of this user will be to upload the test papers of students i.e. their class of students, and recieve marks of the papers they have uploaded. This user cannot have direct access to the memo or question paper. This user also needs approval from the admin before being registered. This is to prevent students registering as fake teachers and uploading tests to get access to the marking system 
+							\item Teacher - The role of this user will be to upload the test papers of students i.e. their class of students, and recieve marks of the papers they have uploaded. This user cannot have direct access to the memo or question paper. This user also needs approval from the admin before being registered. This is to prevent students registering as fake teachers and uploading tests to get access to the marking system .
 						\end{itemize}
 \begin{itemize}
 								\item use case diagrams\\
 								\begin{figure}[h]
 
 								\centerline{\includegraphics[width=200px, height=200px]{user_management.png}}
-								\caption{user management module use case diagram}
+								\caption{user management module use case diagram }
 								\end{figure}
 						\end{itemize}
 			\item \textbf{Notifications Module}\\
@@ -166,11 +168,12 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 
 			\item \textbf {Data Streaming and Security Module}\\
 					\textit{Scope:}\\
-					This module will be responsible for handling and management of data in all its forms. The module will firstly make sure that requests relating to data uploads and downloads are handled as quick as possible through an external data management tool API. The module will also make sure that before data is transported from server to client and vica versa, it will be decrypted and encrypted respectively. This module will basically be responsible for data integrity and data protection of the system.  \\
+					This module will be responsible for the handling and management of data in all its forms. The module will firstly make sure that requests relating to data uploads and downloads are handled as quick as possible through an external data management tool API. The module will also make sure that before data is transported from server to client and vice versa, it will be decrypted and encrypted respectively. This module will basically be responsible for data integrity and data protection of the system.  \\
 			\begin{itemize}
 								\item use case diagrams\\
+								
 								\begin{figure}[h]
-
+								
 								\centerline{\includegraphics[width=200px, height=200px, inner]{data_and_security.png}}
 								\caption{data and security module use case diagram}
 								\end{figure}
@@ -181,15 +184,15 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 				This module will be responsible for the actual marking of uploaded scripts. This module will perform at least 3 functions, which are:
 				\begin{itemize}
 					\item Paper Slicing - This means that the paper will be analyzed, and broken into smaller pieces for OCR functionality.
-					\item Comparing - This means after breaking the paper in smaller pieces, AI analytical algorithms will be used to properly compare and mark the answers against the memo.
+					\item Comparing - This means after breaking the paper into smaller pieces, AI analytical algorithms will be used to properly compare and mark the answers against the memo.
 					\item Persisting - This means after marking is complete, the marks and relevant answer sheet will be stored in the database.
 				\end{itemize}
 \begin{itemize}
 								\item use case diagrams\\
-								\begin{figure}[h]
+								\begin{figure}[!h]
 
 								\centerline{\includegraphics[width=200px, height=150px]{marking.png}}
-								\caption{marking module use case diagram}
+								\caption{marking module use case diagram use case diagram}
 								\end{figure}
 					\end{itemize}
 			\item \textbf{Reporting Module}\\
@@ -255,144 +258,61 @@ Also, Moodle provides accessibility plug-ins. With the requirements listed above
 				\item Reason For Given Mark
 			
 			\end{itemize}
-% 	\subsection{Use case/Services contracts}
-% \subsection{Critical:}
+			
+			
+ 	\subsection{Use case/Services contracts}
+		\begin{itemize}
+			\item Use case Pre/Post Conditions \\
+						\begin{figure}[!h]
 
-% \begin{itemize}
+								\centerline{\includegraphics[width=\linewidth, 	height=110px]{Access_1.jpg}}
+								\caption{Access Module }
+								\end{figure}
+				
+					
+				\begin{figure}[!h]
+
+								\centerline{\includegraphics[width=\linewidth, height=100px]{User_Management_1.jpg}}
+								\caption{User management Module }
+				\end{figure}
+			
+		
+				\begin{figure}[!h]
+
+								\centerline{\includegraphics[width=\linewidth, height=110px]{Notification_1.jpg}}
+								\caption{Notification Module }
+				\end{figure}
+			
+				
+				\begin{figure}[!h]
+
+								\centerline{\includegraphics[width=\linewidth, height=110px]{Data_1.jpg}}
+								\caption{Data Streaming and Security Module}
+				\end{figure}
+			
+				
+				\begin{figure}[!h]
+
+								\centerline{\includegraphics[width=\linewidth, height=110px]{Marking_1.jpg}}
+								\caption{Marking Module }
+				\end{figure}
+				
+				\begin{figure}[!h]
+
+								\centerline{\includegraphics[width=\linewidth, height=110px]{Reporting_1.jpg}}
+								\caption{Reporting Module}
+				\end{figure}
+			
 	
-% 		\item Input memo
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a memo and a scannig system that can accept the memo in physcical form. If the memo is already in the required format which is pdf, the system will accept the input in the pdf format.
-% 				\item Post-condition \\
-% 					 The output will be a bmp image and a pdf document.
-% 			\end{itemize}
-% 		\item Input  question paper
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a question paper and a scannig system that can accept the question paper in physcical form. If the question paper is already in the required format which is pdf, the system will accept the input in the pdf format.
-% 				\item Post-condition \\
-% 					 The output will be a bmp image and a pdf document.
-% 			\end{itemize}
-% 		\item Input  student answer script
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be an answer script and a scannig system that can accept the answer script in physcical form. 
-% 				\item Post-condition \\
-% 					 The output will be a bmp image and a pdf document.
-% 			\end{itemize}
-
-
-% 		\item Mark script
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The answer script must be available in the system as a bmp image and/or a pdf document(and the input files must have passed analysis).
-% 				\item Post-condition \\
-% 					 The marks obtained by the student
-% 			\end{itemize}
 			
-% 		\item Persist Obtained mark
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The system should be done marking with no errors.
-% 				\item Post-condition \\
-% 					 The marks are matched with the student in put in the database.
-% 			\end{itemize}
+			\begin{figure}[!h]
 
-% 		\item Output marks
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The marks must be available in the database
-% 				\item Post-condition \\
-% 					 The system shows the marks of the required student.
-% 			\end{itemize}
-% 		\item Output marked sheet
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The system should be done marking with no errors.
-% 				\item Post-condition \\
-% 					 The system prints out the marked answer sheet
-% 			\end{itemize}
-
-			
-
-
-% \end{itemize} 
-
-% \subsubsection{Important:}
-% 	\begin{itemize}
-% 		\item Validate Question Paper
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a question paper saved in the system as a bmp image or pdf document.
-% 				\item Post-condition \\
-% 					 An error if the question paper is not readable or corrupted.
-% 			\end{itemize}
-% 		\item validate Memo
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a memo saved in the system as a bmp image or pdf document.
-% 				\item Post-condition \\
-% 					 An error if the memo is not readable or corrupted.
-% 			\end{itemize}
-% 		\item validate Student Answer Script
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a answer sheet saved in the system as a bmp image or pdf document.
-% 				\item Post-condition \\
-% 					 An error if the answer sheet is not readable or corrupted.
-% 			\end{itemize}
-% 		\item Slice Question Paper
-% 			\begin{itemize}
-% 				\item Pre-condition  \\
-% 					 The must be a question paper saved in the system as a bmp image or pdf document.
-% 				\item Post-condition \\
-% 					 The question paper will be split into small subsections and stored in a temporary database in the system
-% 			\end{itemize}
-% 		\item Slice Memo
-% 			\begin{itemize}
-% 				\item Pre-condition  \\
-% 					 The must be a memo  saved in the system as a bmp image or pdf document.
-% 				\item Post-condition \\
-% 					 The question paper will be split into small subsections and stored in a temporary database in the system
-% 			\end{itemize}
-% 		\item Slice Student Answer Script
-% 			\begin{itemize}
-% 				\item Pre-condition  \\
-% 					 The must be an answer sheet saved in the system as a bmp image or pdf document.
-% 				\item Post-condition \\
-% 					 The answer sheet will be split into small subsections and stored in a temporary database in the system
-% 			\end{itemize}
-% 		\item Convert Sliced  Question Paper Sections To Suitable Format
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a question paper in  the system that has been sliced into small subsections
-% 				\item Post-condition \\
-% 					 The question paper subsections will be converted to a format suitable to the format accepted by the marking system
-% 			\end{itemize}
-% 		\item Convert Sliced  Memo Sections To Suitable Format
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a memo in  the system that has been sliced into small subsections
-% 				\item Post-condition \\
-% 					 The memo subsections will be converted to a format suitable to the format accepted by the marking system
-% 			\end{itemize}
-% 		\item Convert Sliced  Student Answer Script Sections  To Suitable Format
-% 			\begin{itemize}
-% 				\item Pre-condition \\
-% 					 The must be a answer sheet in  the system that has been sliced into small subsections
-% 				\item Post-condition \\
-% 					 The answer sheet subsections will be converted to a format suitable to the format accepted by the marking system
-			
-% 			\end{itemize}
-
-
-% 	\end{itemize}
-
-% 		\subsubsection{Request and Results Data Structures:}
-		%place text here
+								\centerline{\includegraphics[width=\linewidth, height=110px]{Input_Output_1.jpg}}
+								\caption{I/O Module}
+				\end{figure}
+			\end{itemize}
 	\subsection{Required functionality}
-	%place text here
+	
 	
 The Caracal Automated Marking system will mostly rely on the the Optical Character Recognition (OCR), which has three most essential elements that are vital for the Caracal Automated Marking system. The elements are scanning, reading text and recognition. Therefore, as shown in Figure 1 below, the sequential or rather logical flow of the system will be input, scanning conversion, marking and output.
 
