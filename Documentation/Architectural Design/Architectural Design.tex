@@ -1,0 +1,123 @@
+\documentclass{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[export]{adjustbox}
+\usepackage{paralist}
+\usepackage{wrapfig}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+%----------------------------------------------------------------------------------------
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic publisher logo
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\titleGP}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+{\LARGE Caracal Automated Marking \\ Software Requirements \\ Specification}\\[0.2\baselineskip]  % Title 
+
+Version: (1.0.0) 
+
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+\scshape % Small caps
+\vspace*{2\baselineskip} % Whitespace between location/year and editors
+
+Edited by \\[\baselineskip]
+{\Large Oratile Motswagosele \\ Mankgwanyane Tlaka \\ Lesego Makaleng \\ Kenneth Mangwane \par} % Editor list
+
+{\itshape University of Pretoria\par} % Editor affiliation
+
+\begin{figure}[t]
+\centering
+	\includegraphics[width=350px]{UP_Logo.PNG}
+\end{figure}
+
+{\scshape 2017} \\[0.3\baselineskip] % Year published
+{ Project Client: Caracal Research}\par % Publisher
+
+\endgroup}
+
+\begin{document}
+
+\titleGP % This command includes the title page
+\pagebreak
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Vision and Scope}
+	\subsection{Project Background}
+	
+	\subsection{Project Vision}
+	
+	\subsection{Architecture Design}
+		\subsubsection{Architectural Patterns}
+		\subsubsection{Quality Requirements}
+		\subsubsection{Architectural Tactics}
+	
+	\subsection{Project Scope}
+	
+\section{Modularization}
+	\subsection{Access Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+
+	\subsection{User Management Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+		
+	\subsection{Notifications Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+		
+	\subsection{Data Streaming and Security Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+
+	\subsection{Marking Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+		
+	\subsection{Reporting Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+		
+	\subsection{I/O Module}
+		\subsubsection{Scope}
+		\subsubsection{Domain Model}
+		\subsubsection{Service Contracts}
+		\subsubsection{Technologies}
+		
+\end{document}
