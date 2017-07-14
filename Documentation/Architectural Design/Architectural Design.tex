@@ -68,16 +68,38 @@ Edited by \\[\baselineskip]
 
 \section{Vision and Scope}
 	\subsection{Project Background}
-	
+	E-learning is a topic that receives a lot of attention worldwide and even more in Africa. The problem of ed-
+ucating dispersed people with few resources is a headache that troubles many government and new initiatives
+are being launched daily to try and solve the problem. \\\\
+Taking a deeper look at the grade 12 question paper marking process, it is realised that most of the time,
+individuals are still needed who have the knowledge and skill to go through all the answered mathematics scripts
+and grade them correctly. This process has proven to be time costly and human error tends to creep up at a
+minimal level.
+
 	\subsection{Project Vision}
-	
+	Caracal Automated Marking is aimed at developing a metalanguage for the electronic assessment of grade 12
+mathematical question in which the steps employed to arrive at the answer can be assessed. Not only the final answer.
+The system should be ideally available as a Moodle plugin. The proposed solution, 
+ideally would be integrated into the Moodle open learning platform as a plugin. \\\\
+The system should accept three documents, i.e. a document with mathematics question; a document with the
+memorandum and a document with student answers. The system should analyze answer document and give a
+mark.
+At the end the proposed system should ideallly act as methodology through which any given problem and
+matching memorandum can be entered.
+
 	\subsection{Architecture Design}
 		\subsubsection{Architectural Patterns}
 		\subsubsection{Quality Requirements}
 		\subsubsection{Architectural Tactics}
 	
 	\subsection{Project Scope}
-	
+	E-learning is a topic that is receiving a huge amount of attention worldwide and especially in South Africa.
+Currently most e-learning in schools consists of taking paper material and making it available on electronic
+devices such as tablets. \\\\
+LMS systems such as Moodle gives the option to design and enter electronic courses and presenting assess-
+ments in the form of multiple choice and other one-dimensional methods. The available commerical systems
+are available but cost is a problem.
+
 \section{Modularization}
 	\subsection{Access Module}
 		\subsubsection{Scope}
@@ -138,8 +160,35 @@ Edited by \\[\baselineskip]
 
 	\subsection{User Management Module}
 		\subsubsection{Scope}
+		This module will be in charge of managing user information and the different types of users. The different
+		types of users of this system will be as follows:
+			\begin{itemize}
+				\item{Admin - The role of this user will be to have access to uploading question papers and memorandums,
+					  	and general access to sensitive information of the system. This user can also delete/approve other
+						users below this level i.e. Teachers from the system.}
+				\item{Teacher - The role of this user will be to upload the test papers of students i.e. their class of students,
+						and recieve marks of the papers they have uploaded. This user cannot have direct access to the memo
+						or question paper. This user also needs approval from the admin before being registered. This is to prevent 
+						students registering as fake teachers and uploading tests to get access to the marking system}
+			\end{itemize}
+			
+			\begin{figure}[h]
+				\includegraphics[scale=0.6]{UserManagementModuleUseCase}
+				\caption{User Management Module Use Case}
+			\end{figure}
+			
 		\subsubsection{Domain Model}
+						\begin{figure}[h]
+					\includegraphics[scale=0.6]{UserManagementModuleDomainModel}
+					\caption{User Management Module Domain Model}
+				\end{figure}
+				
 		\subsubsection{Service Contracts}
+						\begin{figure}[h]
+					\includegraphics[scale=0.6]{UserManagementModuleServiceContracts}
+					\caption{User Management Module Service Contracts}
+				\end{figure}
+				
 		\subsubsection{Technologies}
 		
 	\subsection{Notifications Module}
@@ -168,8 +217,32 @@ Edited by \\[\baselineskip]
 		
 	\subsection{I/O Module}
 		\subsubsection{Scope}
+				This module will be in charge of the inputting and outputting of documents. One of the core functionalities
+		for this module, will be to edit the answer sheet and append the marks calculated by the marking module
+		to the answer sheet, and then outputting that document back to the user for download. Managing where
+		documents are inputted to, formats and structure will also be amongst the scope of this module.
+		
+				\begin{figure}[h]
+			\includegraphics[scale=0.6]{IOModuleUseCase}
+			\caption{I/O Module Use Case}
+		\end{figure}
+		
 		\subsubsection{Domain Model}
+					\begin{figure}[h]
+				\includegraphics[scale=0.6]{IOModuleDomainModel}
+				\caption{I/O Module Domain Model}
+			\end{figure}
+			
 		\subsubsection{Service Contracts}
+					\begin{figure}[h]
+				\includegraphics[scale=0.6]{IOModuleServiceContracts}
+				\caption{I/O Module Service Contracts}
+			\end{figure}
+			
 		\subsubsection{Technologies}
+					\begin{itemize}
+				\item Img2Pdf
+				\item PIL(PILLOW)
+			\end{itemize}
 		
 \end{document}
